@@ -297,12 +297,12 @@ body {
 
 /* When flipped, expand height */
 .flip-card.flipped {
-    height: 320px; /* Expanded height for forms */
+    height: 295px; /* Expanded height for forms */
 }
 
 /* Specific expanded heights for different cards */
 #ovulation-benefit-card.flipped {
-    height: 320px; /* Slightly less for ovulation */
+    height: 295px; /* Slightly less for ovulation */
 }
 
 #baby-tracking-card.flipped {
@@ -316,7 +316,7 @@ body {
 .flip-card .card-inner {
     position: relative;
     width: 100%;
-    height: 100%;
+
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
@@ -331,7 +331,7 @@ body {
 .flip-card .card-back {
     position: absolute;
     width: 100%;
-    height: 100%;
+  
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: var(--radius-lg);
@@ -714,35 +714,8 @@ body.dark-mode .hint-text {
     hyphens: auto;
 }
 
-@media (max-width: 480px) {
-    .flip-card {
-        /* Increase base height for mobile front cards */
-        min-height: 280px; 
-    }
-    
-    /* Ensure flipped cards have enough room for forms on small screens */
-    .flip-card.flipped {
-        height: 400px !important; /* Forces enough space for the form */
-    }
-    
-    #ovulation-benefit-card.flipped {
-        height: 1000px !important;
-    }
 
-    #baby-tracking-card.flipped {
-        height: 450px !important; /* Forms need more vertical space on narrow phones */
-    }
-    
-    #articles-benefit-card.flipped {
-        height: 500px !important;
-    }
-    
-    /* Prevent the icon from being too large on small screens */
-    .benefit-icon {
-        font-size: 1.25rem;
-        margin-top: 5px;
-    }
-}
+
 /* For very tall content in pregnancy form */
 #baby-tracking-card .calculator-form {
     min-height: 220px; /* Ensure enough space */
