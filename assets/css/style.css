@@ -1411,7 +1411,7 @@ body.dark-mode .back-btn {
     border-bottom: 1px solid var(--border-color);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .header-left {
@@ -1828,5 +1828,6 @@ body.dark-mode .back-btn {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--text-secondary);
 }
+
 
 
