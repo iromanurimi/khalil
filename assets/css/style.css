@@ -287,7 +287,7 @@ body {
 .flip-card {
     perspective: 1000px;
     /* Change height to min-height to allow content to grow if needed */
-    min-height: 250px; 
+    min-height: 230px; 
     height: auto; 
     width: 100%;
     margin-bottom: 1rem;
@@ -297,26 +297,25 @@ body {
 
 /* When flipped, expand height */
 .flip-card.flipped {
-    height: 295px; /* Expanded height for forms */
+    height: 400px; /* Expanded height for forms */
 }
 
 /* Specific expanded heights for different cards */
 #ovulation-benefit-card.flipped {
-    height: 295px; /* Slightly less for ovulation */
+    height: 290px; /* Slightly less for ovulation */
 }
 
 #baby-tracking-card.flipped {
-    height: 350px; /* Normal for pregnancy */
+    height: 330px; /* Normal for pregnancy */
 }
 
 #articles-benefit-card.flipped {
-    height: 380px; /* Tallest for articles with categories */
+    height: 390px; /* Tallest for articles with categories */
 }
 
 .flip-card .card-inner {
     position: relative;
     width: 100%;
-
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
@@ -331,7 +330,6 @@ body {
 .flip-card .card-back {
     position: absolute;
     width: 100%;
-  
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: var(--radius-lg);
@@ -348,6 +346,7 @@ body {
     color: var(--text-primary);
     /* Allow it to center content if there is extra space */
     justify-content: center; 
+    
 }
 
 /* Card Front Content - All in one column */
